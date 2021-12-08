@@ -37,28 +37,6 @@ module.exports = function (config) {
       FirefoxSemCabeca: {
         base: 'Firefox',
         flags: ['-headless']
-      },
-      ChromeHeadless: {
-        base: 'Chrome',
-        flags: ['--headless', '--disable-gpu', '--remote-debugging-port=9222', 'http://0.0.0.0:9876/']
-      },
-      Chrome_Beta_Headless: {
-        base: 'Chrome',
-        flags: ['--headless', '--disable-gpu', '--remote-debugging-port=9222']
-      },
-      ChromeHeadlessNoSandbox:{
-        base: "ChromeHeadless",
-        flags: [
-          "--no-sandbox",
-          "--no-proxy-server",
-          "--disable-web-security",
-          "--disable-gpu",
-          "--disable-dev-shm-usage",
-          '--no-proxy-server',
-          '--proxy-bypass-list=*',
-          '--window-size=1920,1080',
-          '--remote-debugging-port=9222'
-        ]
       }
     }
   });
